@@ -1,0 +1,43 @@
+.appbar {
+  background-color: white;
+
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 99;
+}
+
+.appbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 70px;
+
+  padding: 20px 15px;
+}
+
+.appbar__title {
+  display: flex;
+  align-items: center;
+}
+
+.appbar__logo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  margin-right: 10px;
+}
+
+.appbar__text {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.appbar__menu {
+  width: 40px;
+  height: 40px;
+}

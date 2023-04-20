@@ -1,0 +1,28 @@
+.footer {
+  background-color: #ececec;
+}
+
+.footer__inner {
+  padding: 20px 15px;
+}
+
+.footer__title-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer__logo {
+  background-color: grey;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__title {
+  font-size: 20px;
+}
+
+.footer__info {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
