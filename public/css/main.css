@@ -17,25 +17,18 @@
 
 /* main -> entrance-section */
 .entrance-section {
-  background-image: url("../img/entrance-background.jpg");
-  background-position: center;
-  background-size: cover;
+  position: relative;
 }
 
 .entrance-section__inner {
-  position: relative;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0)
-  );
   height: 495px;
 }
 
 .entrance-section__info {
-  padding: 0 15px;
-  padding-top: 80px;
+  position: absolute;
+  left: 15px;
+  top: 80px;
+  pointer-events: none;
 }
 
 .entrance-section__title {
@@ -47,11 +40,69 @@
 .entrance-section__arrow-icon {
   position: absolute;
   left: calc(50% - 15px);
-  bottom: 30px;
+  bottom: 10px;
   color: white;
 
   width: 30px;
   height: 30px;
+}
+
+.entrance-section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 495px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.introduce-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 495px;
+}
+
+.introduce-carousel__slides {
+  display: flex;
+  overflow-x: auto;
+
+  height: 495px;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.introduce-carousel__slides::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.introduce-carousel__slides > .introduce-carousel__item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+
+  width: 100%;
+  height: 495px;
+  object-fit: cover;
+
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.introduce-carousel__image {
+  object-fit: contain;
 }
 
 /* main -> introduce-section */
@@ -62,6 +113,7 @@
 
 .introduce-section__inner {
   padding: 100px 15px;
+  position: relative;
 }
 
 .introduce-section__title {
@@ -86,9 +138,8 @@
 }
 
 .value-item__image {
-  background-color: grey;
   width: 200px;
-  height: 200px;
+  height: auto;
   border-radius: 100%;
 
   margin-bottom: 10px;
@@ -129,7 +180,6 @@
 
 .project-item__image {
   width: 100%;
-  height: 500px;
   object-fit: cover;
 
   margin-bottom: 30px;
