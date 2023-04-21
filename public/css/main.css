@@ -114,6 +114,12 @@
   gap: 100px;
 }
 
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .value-item__image {
   width: 200px;
   height: auto;
@@ -164,8 +170,13 @@
 }
 
 .project-item__image {
+  display: flex;
+
   width: 100%;
+  max-width: 500px;
   object-fit: cover;
+
+  margin: 0 auto;
 }
 
 .project-item__description {
