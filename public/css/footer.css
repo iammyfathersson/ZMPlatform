@@ -9,13 +9,13 @@
 .footer__title-group {
   display: flex;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .footer__logo {
-  background-color: grey;
-  margin-right: 10px;
-  width: 24px;
-  height: 24px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .footer__title {

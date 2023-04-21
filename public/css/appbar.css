@@ -26,10 +26,9 @@
 
 .appbar__logo {
   display: block;
-  width: 30px;
-  height: 30px;
-  background-color: grey;
-  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
 }
 
 .appbar__text {
