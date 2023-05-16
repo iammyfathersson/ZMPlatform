@@ -14,9 +14,11 @@
   justify-content: space-between;
   align-items: center;
 
-  height: 70px;
+  max-width: 1280px;
+  height: 60px;
 
-  padding: 20px 15px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .appbar__title {
@@ -29,17 +31,50 @@
 
 .appbar__logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 5px;
 }
 
 .appbar__text {
   font-weight: 800;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .appbar__menu {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .appbar__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .appbar__inner {
+    height: 70px;
+    padding: 20px 15px;
+
+    max-width: 800px;
+  }
+
+  .appbar__text {
+    font-size: 24px;
+  }
+
+  .appbar__menu {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .appbar__inner {
+    max-width: 1200px;
+  }
+
+  .appbar__menu {
+    display: none;
+  }
 }
